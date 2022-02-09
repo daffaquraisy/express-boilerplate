@@ -11,9 +11,6 @@ const app = express();
 const corsOptions = {
   origin: [
     "http://localhost:8080",
-    "https://pubb92u3h2u.scheduler.my.id",
-    "http://10.35.85.41",
-    "http://10.53.26.78:8080",
   ],
 };
 
@@ -48,8 +45,8 @@ app.get("/", (req, res) => {
 // call cron example
 // functionCron();
 
-// user managament routes
-require("./app/routes/auth.routes")(app);
+// routes
+// require("./app/routes/exaole.routes")(app);
 
 // example upload
 // app.use(fileUpload({ useTempFiles: true, tempFileDir: "/tmp/" }));
