@@ -4,14 +4,12 @@ const cors = require("cors");
 // const device = require("express-device");
 // const fileUpload = require("express-fileupload");
 // call cron
-// const { addLatLonRudalAM } = require("./app/job/cron");
+// const { cronVar } = require("./app/job/cron");
 
 const app = express();
 
 const corsOptions = {
-  origin: [
-    "http://localhost:8080",
-  ],
+  origin: ["http://localhost:8080"],
 };
 
 app.use(cors(corsOptions));
